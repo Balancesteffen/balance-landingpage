@@ -58,124 +58,86 @@
     </section>
 
 
-    <section
-      class="contact"
-      id="kontakt"
-      aria-labelledby="contact-title"
-    >
+   <section class="contact" id="kontakt" aria-labelledby="contact-title">
+  <div class="contact-layout">
 
-      <div class="contact-layout">
+    <div class="contact-copy">
+      <p class="eyebrow">BALANCE</p>
 
-        <div class="contact-copy">
+      <h2 id="contact-title">
+        Wir suchen ausgewählte Investoren.
+      </h2>
 
-          <p class="eyebrow">BALANCE</p>
+      <p class="contact-subline">
+        Erfahren Sie in einem persönlichen Gespräch mehr über BALANCE und unsere Wachstumsstrategie.
+      </p>
+    </div>
 
-          <h2 id="contact-title">
-            BALANCE persönlich kennenlernen.
-          </h2>
+    <div class="contact-card">
+      <form id="lead-form" novalidate>
 
-          <p class="contact-subline">
-            Erfahren Sie in einem persönlichen Gespräch mehr über BALANCE und
-            unsere Wachstumsstrategie.
-          </p>
-
+        <div class="field-row">
+          <label>
+            <span>Name</span>
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              required
+              maxlength="100"
+            />
+          </label>
         </div>
 
+        <div class="field-row two-columns">
+          <label>
+            <span>E-Mail-Adresse</span>
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+              maxlength="200"
+            />
+          </label>
 
-        <div class="contact-card">
-
-          <form id="lead-form" novalidate>
-
-            <div class="field-row">
-
-              <label>
-
-                <span>Name</span>
-
-                <input
-                  type="text"
-                  name="name"
-                  autocomplete="name"
-                  required
-                  maxlength="100"
-                />
-
-              </label>
-
-            </div>
-
-
-            <div class="field-row two-columns">
-
-              <label>
-
-                <span>E-Mail-Adresse</span>
-
-                <input
-                  type="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                  maxlength="200"
-                />
-
-              </label>
-
-              <label>
-
-                <span>Telefonnummer</span>
-
-                <input
-                  type="tel"
-                  name="phone"
-                  autocomplete="tel"
-                  required
-                  maxlength="40"
-                />
-
-              </label>
-
-            </div>
-
-
-            <label class="consent">
-
-              <input
-                type="checkbox"
-                name="consent"
-                required
-              />
-
-              <span>
-                Ich stimme zu, dass BALANCE mich zur Vereinbarung eines
-                Investorengesprächs per E-Mail oder Telefon kontaktieren darf.
-                Hinweise zur Verarbeitung meiner Daten finde ich in der
-                Datenschutzerklärung.
-              </span>
-
-            </label>
-
-
-            <button type="submit">
-              Gespräch anfragen
-            </button>
-
-
-            <p
-              class="form-message"
-              id="form-message"
-              role="status"
-              aria-live="polite"
-            ></p>
-
-          </form>
-
+          <label>
+            <span>Telefonnummer</span>
+            <input
+              type="tel"
+              name="phone"
+              autocomplete="tel"
+              required
+              maxlength="40"
+            />
+          </label>
         </div>
 
-      </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" required />
 
-    </section>
+          <span>
+            Ich stimme zu, dass BALANCE mich zur Vereinbarung eines
+            Investorengesprächs per E-Mail oder Telefon kontaktieren darf.
+            Hinweise zur Verarbeitung meiner Daten finde ich in der
+            Datenschutzerklärung.
+          </span>
+        </label>
 
+        <button type="submit">Gespräch anfragen</button>
+
+        <p
+          class="form-message"
+          id="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
   </main>
 
 
