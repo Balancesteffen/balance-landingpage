@@ -213,3 +213,36 @@ footer a:hover { color: var(--text); }
   .contact-card { border-radius: 26px; }
   footer { width: calc(100% - 32px); flex-direction: column; }
 }
+/* ===== Rechtliche Seiten ===== */
+
+.legal-content {
+    text-align: center;
+}
+
+.legal-content h3 {
+    margin: 2.5rem 0 0.8rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.legal-content p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.legal-content a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
