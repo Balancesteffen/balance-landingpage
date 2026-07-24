@@ -366,10 +366,10 @@ footer a:hover {
     border-radius: 28px;
   }
 
-  .contact-layout {
-    grid-template-columns: 1fr;
-    width: min(760px, 100%);
-  }
+ .contact-layout {
+  grid-template-columns: 1fr;
+  width: min(760px, calc(100% - 32px));
+}
 
   .contact-copy {
     padding-bottom: 1rem;
