@@ -246,7 +246,6 @@ footer a:hover { color: var(--text); }
 }
 
 @media (max-width: 920px) {
-
   .hero {
     grid-template-columns: 1fr;
     width: min(760px, calc(100% - 32px));
@@ -267,6 +266,7 @@ footer a:hover { color: var(--text); }
 
   .contact-layout {
     grid-template-columns: 1fr;
+    width: min(760px, calc(100% - 32px));
     gap: 3rem;
   }
 
@@ -280,60 +280,61 @@ footer a:hover { color: var(--text); }
   }
 
   .contact-subline {
-    font-size: clamp(1.35rem, 2.2vw, 2.2rem);
     margin-top: 1.5rem;
+    font-size: clamp(1.35rem, 5vw, 2.2rem);
   }
 
   .contact-card {
     width: 100%;
     max-width: 100%;
   }
-
-}   /* <-- DIESE KLAMMER FEHLT */
-
-@media (max-width: 620px) {
-  .hero { min-height: auto; padding-bottom: 80px; }
-  .hero-copy { padding-top: 2rem; }
-  .two-columns { grid-template-columns: 1fr; }
-  .contact { min-height: auto; padding: 64px 0 90px; }
-  .contact-card { border-radius: 26px; }
-  .contact-copy h2 { font-size: clamp(2.7rem, 13vw, 4.6rem); }
-  footer { width: calc(100% - 32px); flex-direction: column; }
 }
 
-/* Kontaktbereich zwingend zweispaltig auf Desktop */
+@media (max-width: 620px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
 
-@media (min-width: 921px) {
+  .hero-copy {
+    padding-top: 2rem;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+
   .contact {
-    min-height: 100vh !important;
-    display: flex !important;
-    align-items: center !important;
-    padding: 72px 24px 110px !important;
+    min-height: auto;
+    padding: 64px 0 90px;
   }
 
   .contact-layout {
-    width: min(1400px, 100%) !important;
-    margin: 0 auto !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 0.85fr) minmax(420px, 1.15fr) !important;
-    align-items: center !important;
-    gap: clamp(2rem, 5vw, 6rem) !important;
-  }
-
-  .contact-copy {
-    max-width: 650px !important;
+    gap: 2.5rem;
   }
 
   .contact-copy h2 {
-    margin: 0 !important;
-    font-size: clamp(3.2rem, 6vw, 6.8rem) !important;
-    line-height: 0.94 !important;
-    letter-spacing: -0.06em !important;
-    font-weight: 650 !important;
+    font-size: clamp(3.4rem, 14vw, 6rem);
+    line-height: 0.94;
   }
 
   .contact-card {
-    width: 100% !important;
-    max-width: none !important;
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .form-intro {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .form-intro p {
+    font-size: 1.1rem;
+    line-height: 1.45;
+  }
+
+  footer {
+    width: calc(100% - 32px);
+    flex-direction: column;
   }
 }
