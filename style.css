@@ -246,3 +246,40 @@ footer a:hover { color: var(--text); }
     font-weight: 600;
     text-decoration: none;
 }
+/* ===== Rechtliche Seiten ===== */
+
+.legal-content {
+    text-align: center;
+}
+
+.legal-content h3 {
+    margin: 2.5rem 0 0.8rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.legal-content p {
+    margin: 0 0 1rem;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+.legal-content strong {
+    color: var(--text);
+}
+
+.legal-content a {
+    color: var(--accent);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 3rem;
+    font-weight: 600;
+}
