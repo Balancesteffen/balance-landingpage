@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BALANCE – Die Zukunft deiner Gesundheit. Näher, als du denkst." />
+  <meta name="theme-color" content="#f7f9fc" />
+  <title>BALANCE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="brand">BALANCE</p>
+        <h1 id="hero-title">Die Zukunft deiner Gesundheit.</h1>
+        <p class="subline">Näher, als du denkst.</p>
+        <a class="primary-link" href="#kontakt">Mehr erfahren <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero-visual" aria-label="Vorschau der BALANCE App">
+        <img src="/assets/balance-app.jpeg" alt="Drei Smartphones mit der BALANCE App für Männer, Familie und Frauen" />
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <p class="eyebrow">BALANCE</p>
+        <h2 id="contact-title">Mehr Informationen erhalten</h2>
+
+        <form id="lead-form" novalidate>
+          <div class="field-row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required maxlength="100" />
+            </label>
+          </div>
+
+          <div class="field-row two-columns">
+            <label>
+              <span>E-Mail-Adresse</span>
+              <input type="email" name="email" autocomplete="email" required maxlength="200" />
+            </label>
+            <label>
+              <span>Telefonnummer</span>
+              <input type="tel" name="phone" autocomplete="tel" required maxlength="40" />
+            </label>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>Ich stimme zu, dass BALANCE mich zu meiner Anfrage per E-Mail oder Telefon kontaktieren darf. Hinweise zur Verarbeitung meiner Daten finde ich in der Datenschutzerklärung.</span>
+          </label>
+
+          <button type="submit">Informationen anfordern</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> BALANCE</span>
+    <nav aria-label="Rechtliches">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </nav>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
