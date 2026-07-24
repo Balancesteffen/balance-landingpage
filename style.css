@@ -246,37 +246,50 @@ footer a:hover { color: var(--text); }
 }
 
 @media (max-width: 920px) {
+
   .hero {
     grid-template-columns: 1fr;
     width: min(760px, calc(100% - 32px));
     padding-top: 34px;
   }
-  .hero-copy { padding-top: 3rem; }
-  h1 { font-size: clamp(3.4rem, 14vw, 6rem); }
-  .hero-visual { border-radius: 28px; }
+
+  .hero-copy {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    font-size: clamp(3.4rem, 14vw, 6rem);
+  }
+
+  .hero-visual {
+    border-radius: 28px;
+  }
+
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 3rem;
-}
+  }
 
-.contact-copy {
+  .contact-copy {
     max-width: 100%;
-}
+  }
 
-.contact-copy h2 {
+  .contact-copy h2 {
     font-size: clamp(3.4rem, 14vw, 6rem);
     line-height: 0.94;
-}
+  }
 
-.contact-subline {
+  .contact-subline {
     font-size: clamp(1.35rem, 2.2vw, 2.2rem);
     margin-top: 1.5rem;
-}
+  }
 
-.contact-card {
+  .contact-card {
     width: 100%;
     max-width: 100%;
-}
+  }
+
+}   /* <-- DIESE KLAMMER FEHLT */
 
 @media (max-width: 620px) {
   .hero { min-height: auto; padding-bottom: 80px; }
