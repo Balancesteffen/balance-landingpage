@@ -105,7 +105,7 @@ export async function onRequestPost(context) {
 
     return jsonResponse({
       success: true,
-      message: "Vielen Dank. Wir melden uns bei dir.",
+      message: "Vielen Dank. Wir melden uns zeitnah persönlich bei Ihnen.",
     });
   } catch (error) {
     console.error("Formularfehler:", error);
