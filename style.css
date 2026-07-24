@@ -124,13 +124,14 @@ h1 {
 
 .contact {
   min-height: 100svh;
-  display: grid;
-  place-items: center;
-  padding: 72px 24px 110px;
+  display: flex;
+  align-items: center;
+  padding: 72px 0 110px;
 }
 
 .contact-layout {
-  width: min(1400px, 100%);
+  width: min(1400px, calc(100% - 48px));
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(420px, 1.15fr);
   align-items: center;
@@ -144,18 +145,18 @@ h1 {
 .contact-copy h2 {
   margin: 0;
   font-size: clamp(3.2rem, 6vw, 6.8rem);
-  line-height: 0.96;
+  line-height: 0.94;
   letter-spacing: -0.06em;
   font-weight: 650;
 }
 
 .contact-subline {
-  margin: 1.6rem 0 0;
+  margin: 1.5rem 0 0;
   max-width: 620px;
-  font-size: clamp(1.25rem, 2vw, 1.85rem);
-  line-height: 1.35;
+  font-size: clamp(1.35rem, 2.2vw, 2.2rem);
+  line-height: 1.25;
   color: var(--muted);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 
 .contact-card {
@@ -167,12 +168,6 @@ h1 {
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
-
-/* Alte Rechteseiten behalten ihre große Karte */
-.legal-content.contact-card {
-  width: min(760px, 100%);
-}
-
 /* ===== Formular ===== */
 
 form {
