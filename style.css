@@ -259,3 +259,40 @@ footer a:hover { color: var(--text); }
   .contact-copy h2 { font-size: clamp(2.7rem, 13vw, 4.6rem); }
   footer { width: calc(100% - 32px); flex-direction: column; }
 }
+
+/* Kontaktbereich zwingend zweispaltig auf Desktop */
+
+@media (min-width: 921px) {
+  .contact {
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 72px 24px 110px !important;
+  }
+
+  .contact-layout {
+    width: min(1400px, 100%) !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 0.85fr) minmax(420px, 1.15fr) !important;
+    align-items: center !important;
+    gap: clamp(2rem, 5vw, 6rem) !important;
+  }
+
+  .contact-copy {
+    max-width: 650px !important;
+  }
+
+  .contact-copy h2 {
+    margin: 0 !important;
+    font-size: clamp(3.2rem, 6vw, 6.8rem) !important;
+    line-height: 0.94 !important;
+    letter-spacing: -0.06em !important;
+    font-weight: 650 !important;
+  }
+
+  .contact-card {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
